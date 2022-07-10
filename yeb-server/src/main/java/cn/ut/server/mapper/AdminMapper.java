@@ -1,7 +1,10 @@
 package cn.ut.server.mapper;
 
 import cn.ut.server.pojo.Admin;
+import cn.ut.server.pojo.Menu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import java.util.List;
 
 /**
  * <p>
