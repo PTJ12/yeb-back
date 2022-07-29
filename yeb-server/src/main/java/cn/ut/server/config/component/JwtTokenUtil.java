@@ -1,4 +1,4 @@
-package cn.ut.server.config.security;
+package cn.ut.server.config.component;
 
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Value;

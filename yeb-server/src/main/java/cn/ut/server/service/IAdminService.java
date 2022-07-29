@@ -3,6 +3,7 @@ package cn.ut.server.service;
 import cn.ut.server.pojo.Admin;
 import cn.ut.server.pojo.Menu;
 import cn.ut.server.pojo.RespBean;
+import cn.ut.server.pojo.Role;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -35,4 +36,10 @@ public interface IAdminService extends IService<Admin> {
     Admin getAdminByUserName(String username);
 
 
+    /**
+     * 根据用户id查询角色列表
+     * @param adminId
+     * @return
+     */
+    List<Role> getRoles(Integer adminId);
 }

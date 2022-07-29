@@ -19,14 +19,14 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author ut
- * @since 2022-07-09
+ * @since 2022-07-19
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t_joblevel")
-@ApiModel(value="Joblevel对象", description="")
-public class Joblevel implements Serializable {
+@TableName("t_position")
+@ApiModel(value="Position对象", description="")
+public class Position implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -34,11 +34,8 @@ public class Joblevel implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "职称名称")
+    @ApiModelProperty(value = "职位")
     private String name;
-
-    @ApiModelProperty(value = "职称等级")
-    private String titleLevel;
 
     @ApiModelProperty(value = "创建时间")
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "Asia/Shanghai")

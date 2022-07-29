@@ -1,4 +1,4 @@
-package cn.ut.server.config.security;
+package cn.ut.server.config.component;
 
 import cn.ut.server.pojo.RespBean;
 import com.fasterxml.jackson.databind.ObjectMapper;
